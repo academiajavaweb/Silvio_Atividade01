@@ -41,11 +41,11 @@ public class NewServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
-            out.println("<h1> Nome: " + getParameter("Silvio") +  "</h1>");
-            out.println("<h1> Sobrenome: " + getParameter("Dantas") +  "</h1>");
-            out.println("<h1> Endereço: " + getParameter("Rua Qualquer") +  "</h1>");
-            out.println("<h1> Telefone: " + getParameter("79998955653") +  "</h1>");
-            out.println("<h1> Cidade: " + getParameter("Aracaju - SE") +  "</h1>");
+            out.println("<h1> Nome: " + request.getParameter("Silvio") +  "</h1>");
+            out.println("<h1> Sobrenome: " + request.getParameter("Dantas") +  "</h1>");
+            out.println("<h1> Endereço: " + request.getParameter("Rua Qualquer") +  "</h1>");
+            out.println("<h1> Telefone: " + request.getParameter("79998955653") +  "</h1>");
+            out.println("<h1> Cidade: " + request.getParameter("Aracaju - SE") +  "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
